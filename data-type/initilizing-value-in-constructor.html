@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<title> Initializing objects </title>
+<meta charset="utf-8">
+<script>
+function Point(x, y) {
+if (x == undefined || x == null) {
+this.x = 50;
+} else {
+this.x = x;
+}
+if (y == undefined || y == null) {
+this.y = 50;
+} else {
+this.y = y;
+}
+// Make a toString() method we can use to display the point
+this.toString = function() {
+return "[" + this.x + ", " + this.y + "]";
+}
+}
+// Can have code in constructors too
+var p = new Point();
+console.log("My point is: " + p.toString());
+</script>
+</head>
+<body>
+</body>
+</html>

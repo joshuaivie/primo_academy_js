@@ -1,0 +1,29 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Shapes with Prototypes and Inheritance </title>
+<meta charset="utf-8">
+ 
+<script>
+
+function makeWorker() {
+    name = "Pete";
+    return function() {
+        alert("Hi, " + name);
+    }
+ 
+   
+}
+
+let name = "John";
+let work = makeWorker();
+ work(); // what will it show? "Pete" (name where created) or "John" (name where calle
+
+
+</script>
+</head>
+<body>
+<div id="container"></div>
+</body>
+</html>
