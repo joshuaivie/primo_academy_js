@@ -1,0 +1,16 @@
+<script>
+function serverRequest(query, callback){
+  setTimeout(function(){
+    var results = query + "full!";
+    callback(results);
+  },10000);
+}
+
+function getResults(results){
+  console.log("Response from the server: " + results);
+}
+
+serverRequest("The glass is half ", getResults);
+console.log("Do some other thing")
+
+</script>
